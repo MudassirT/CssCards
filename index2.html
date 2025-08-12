@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 400px;
+            height: 550px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #cardimage{
+            width: 400px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            height: 170px;
+        }
+        #firsthead{
+            font-size: 1.6rem;
+            margin-top: 25px;
+        }
+        #firstpara{
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 25px;
+        }
+        .icon{
+            width: 350px;
+            height: 60px;
+            background-color: rgba(119, 0, 128, 0.515);
+            border-radius: 10px;
+            margin-top: 25px;
+            padding-left: 10px;
+            padding-right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #iconimage{
+            width: 60px;
+            height: 60px;
+        }
+        .icon1{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .paymentbuttoncontainer{
+            width: 320px;
+            height: 40px;
+            margin-top: 25px;
+
+        }
+        #paymentbutton{
+            text-align: center;
+            background-color: #340d46e7;
+            width: 100%;
+            height: 100%;
+            color: white;
+            border-radius: 7px;
+            box-shadow: 0px 2px 7px 0px black;
+        }
+        #cancelbutton{
+            margin-top: 25px;
+            text-decoration: none;
+            color: black;
+            font-size: 1.1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg" alt="CardImage" id="cardimage">
+            <h1 id="firsthead">Order Summary</h1>
+            <p id="firstpara">Lorem ipsum dolor sit amet consectetur cing elit. Assumenda sequi ratione non, recusandae pariatur quaerat. Lorem ipsum dolor sit amet.</p>
+            <div class="icon">
+                <div class="icon1">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/428/325/non_2x/3d-social-media-icons-music-free-png.png" alt="MusicIcon" id="iconimage">
+                    <div class="icontitle">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                </div>
+                <div class="icon2">
+                    <a href="#">Change</a>
+                </div>
+            </div> 
+            <div class="paymentbuttoncontainer">
+                <button id="paymentbutton">Proceed To Payment</button>
+            </div>
+            <a href="#" id="cancelbutton">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
